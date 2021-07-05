@@ -47,7 +47,8 @@ com.mercateo.assignment.presenter.ItemPresenterStrategy to print the solution
 
 ### Clone this repository
 ```
-https://github.com/faridhaq1403/package_challenge.git   
+https://github.com/faridhaq1403/Mercateo_Package_Challege
+
 ```
 
 ### Installing
