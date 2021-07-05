@@ -31,6 +31,20 @@ To compile and run the project, the following tools should be installed:
 * Junit
 * Maven
 
+###  Classes Uses in Program
+com.mercateo.assignment.Application is the main class which invokes com.mercateo.assignment.packer.Packer
+
+Packer class takes help of the following classes to do the work
+
+com.mercateo.assignment.parser.FileParser to convert file text into com.mercateo.assignment.model.Package
+
+com.mercateo.assignment.validator.PackageValidator to validate the data
+
+com.mercateo.assignment.solution.KnapsackSolver to solve the problem
+
+com.mercateo.assignment.presenter.ItemPresenterStrategy to print the solution
+
+
 ### Clone this repository
 ```
 https://github.com/faridhaq1403/package_challenge.git   
