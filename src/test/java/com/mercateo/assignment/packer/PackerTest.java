@@ -1,5 +1,6 @@
 package com.mercateo.assignment.packer;
 
+import com.mercateo.assignment.utils.Utils;
 import org.junit.jupiter.api.DisplayName;
 import org.junit.jupiter.api.Test;
 import org.springframework.beans.factory.annotation.Autowired;
@@ -16,8 +17,8 @@ public class PackerTest {
     @Test
     @DisplayName("execute packer and create valid pack")
     void pack() {
-        String VALID_INPUT = "D://sampleInput.txt";
-        String pack = packer.solvePacking(VALID_INPUT);
+        String VALID_INPUT = "input_correct.txt";
+        String pack = packer.solvePacking(Utils.getAbsolutePath(VALID_INPUT));
         assertThat(pack).isEqualTo("4" +
                 System.lineSeparator() +
                 "-" +

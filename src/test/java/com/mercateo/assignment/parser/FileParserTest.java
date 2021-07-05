@@ -44,7 +44,7 @@ class FileParserTest {
 
         assertThatThrownBy(() -> textPackParser.parseFile(Utils.getAbsolutePath(INVALID_LINE_FORMAT)))
                 .isInstanceOf(ApiException.class)
-                .hasMessage("This file contains invalid input");
+                .hasMessageContaining("This file contains invalid input");
     }
 
     @Test
